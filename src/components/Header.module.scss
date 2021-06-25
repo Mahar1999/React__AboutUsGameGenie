@@ -1,0 +1,90 @@
+@import "../helper/mixin.scss";
+
+.headerContainer {
+  height: 90vh;
+  background-image: linear-gradient(to bottom right, #111111c4, #313027dc),
+    url("../img/header-1.jpg");
+  border-radius: 3px;
+
+  @include respond(tab-phone-1) {
+    height: 80vh;
+  }
+  @include respond(phone-1) {
+    height: 60vh;
+  }
+  @include respond(phone-2) {
+    height: 50vh;
+  }
+}
+
+.headerTitle {
+  height: 15%;
+  color: #ffffff;
+  font-size: 3rem;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  word-spacing: 6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(tab-land) {
+    font-size: 2rem;
+  }
+  @include respond(tab-phone-2) {
+    font-size: 1.5rem;
+  }
+}
+.heading {
+  height: 75%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.primaryHeading {
+  color: #ffffff;
+  font-size: 9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+
+  @include respond(tab-land) {
+    font-size: 6rem;
+  }
+  @include respond(tab-port) {
+    letter-spacing: 0.3rem;
+  }
+  @include respond(tab-phone-1) {
+    letter-spacing: 0.2;
+    font-size: 5rem;
+  }
+  @include respond(tab-phone-2) {
+    letter-spacing: 0.2;
+    font-size: 4rem;
+  }
+  @include respond(phone-1) {
+    font-size: 3.5rem;
+  }
+  @include respond(phone-2) {
+    font-size: 2rem;
+  }
+}
+
+.secondaryHeading {
+  color: #ffffff;
+  font-size: 3rem;
+  letter-spacing: 3px;
+
+  @include respond(tab-land) {
+    font-size: 2rem;
+  }
+  @include respond(tab-phone-2) {
+    font-size: 1.5rem;
+  }
+  @include respond(phone-2) {
+    font-size: 1rem;
+  }
+}

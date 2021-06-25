@@ -1,0 +1,75 @@
+@import "../helper/mixin.scss";
+
+.contactContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactInfo {
+  width: 50%;
+  height: 90vh;
+  @include respond(phone-1) {
+    height: 60vh;
+  }
+}
+
+.contactHeadingPrimary {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  margin: 2rem 0 0.5rem 2rem;
+  color: #3b3b3b;
+
+  @include respond(tab-land) {
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+  @include respond(tab-port) {
+    margin: 1rem 0 0.5rem 2rem;
+  }
+  @include respond(tab-phone-1) {
+    font-size: 2rem;
+  }
+  @include respond(phone-1) {
+    font-size: 1.5rem;
+  }
+}
+.contactHeadingTagline {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin: 0 0 2rem 2rem;
+  color: #3b3b3b;
+  text-transform: capitalize;
+  @include respond(tab-land) {
+    font-size: 0.8rem;
+  }
+  @include respond(phone-1) {
+    font-size: 0.6rem;
+    margin: 0 0 0rem 2rem;
+  }
+}
+
+.ContactUserContainer {
+  margin: 1rem 0rem 0rem 2rem;
+  color: #3b3b3b;
+  @include respond(phone-1) {
+    margin: 0 0 0rem 2rem;
+  }
+}
+
+.contactImage {
+  width: 50%;
+  height: 90vh;
+  background-image: linear-gradient(to bottom right, #3f3f3f9a, #2b26205d),
+    url("../img/contact-3.jpg");
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+  @include respond(phone-1) {
+    height: 60vh;
+  }
+}

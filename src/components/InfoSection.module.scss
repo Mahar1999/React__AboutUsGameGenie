@@ -1,0 +1,100 @@
+@import "../helper/mixin.scss";
+
+.infoContainer {
+  background-color: #f7f4ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include respond(tab-port) {
+    padding: 0 2rem;
+  }
+  @include respond(phone-1) {
+    padding: 0 1rem;
+  }
+}
+
+.contentContainer {
+  border: 1rem double rgb(107, 107, 107);
+  margin: 4rem 0rem;
+  padding: 0 4rem;
+
+  @include respond(tab-land) {
+    padding: 0 2rem;
+  }
+  @include respond(tab-phone-1) {
+    margin: 1rem 0rem;
+  }
+}
+.infoHeading {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem auto;
+  margin-top: 4rem;
+  color: #3b3b3b;
+  text-transform: capitalize;
+  font-style: italic;
+  line-height: 3rem;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+
+  @include respond(tab-land) {
+    margin-top: 3rem;
+  }
+  @include respond(tab-phone-1) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  @include respond(phone-1) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+    margin: 1rem auto;
+  }
+}
+
+.infoContent {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 2rem;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  margin-bottom: 4rem;
+  @include respond(tab-land) {
+    margin-bottom: 3rem;
+  }
+  @include respond(tab-phone-1) {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+  @include respond(phone-1) {
+    margin-bottom: 1rem;
+    font-size: 0.6rem;
+    line-height: 1.1rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+}
+
+//// Member Container
+
+.memberContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 3rem;
+
+  @include respond(tab-phone-1) {
+    margin-bottom: 2rem;
+  }
+  @include respond(phone-1) {
+    margin-bottom: 1rem;
+  }
+}

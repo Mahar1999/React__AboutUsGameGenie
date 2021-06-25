@@ -1,0 +1,27 @@
+@import "../helper/mixin.scss";
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+
+  color: #f7f4ef;
+  background-color: #3b3b3b;
+  border-radius: 5px;
+
+  p {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+
+    @include respond(tab-land) {
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+    }
+    @include respond(tab-phone-1) {
+      padding: 2rem 1rem;
+      font-size: 0.7rem;
+    }
+  }
+}

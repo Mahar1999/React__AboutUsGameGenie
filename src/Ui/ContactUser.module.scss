@@ -1,0 +1,22 @@
+@import "../helper/mixin.scss";
+
+.UserConatiner {
+  margin-bottom: 1rem;
+  @include respond(phone-1) {
+    margin-bottom: 0.25rem;
+  }
+}
+
+.title {
+  font-size: 1.4rem;
+  @include respond(tab-port) {
+    font-size: 1rem;
+  }
+}
+
+.email {
+  font-size: 0.9rem;
+  @include respond(phone-1) {
+    font-size: 0.6rem;
+  }
+}
